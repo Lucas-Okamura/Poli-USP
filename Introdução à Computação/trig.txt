@@ -1,0 +1,2 @@
+sin(complex(1, 1) * x) + cos(complex(0, 2) * x)
+complex(1, 1) * cos(complex(1, 1) * x) - complex(0, 2) * sin(complex(0, 2) * x)

@@ -1,0 +1,37 @@
+Para rodar as simulações do T1 sobre movimentos laterais do Boeing 747
+siga os passos abaixo:
+
+1) Executar o código Dados.sce para criar as matrizes de comportamento do
+sistema.
+
+2) Executar o código ode.sce para construir os gráficos de comportamento
+do avião ao longo do tempo. Dentro do programa é possível modificar a 
+função u(t), que representa a entrada equivalente às deflexões das 
+superfícies de controle.
+
+3) Executar o código csim.sce para construir os Diagramas de Bode e o 
+gráfico com os polos do sistema.
+
+4) Executar o código controlabilidadeeobservabilidade.sce para verificar
+se o sistema é controlável e observável.
+
+5) Executar os programas lqr - contr e obs.sce e Alocação de polos -obs e 
+contr.sce para obter as matrizes de ganho para os respectivos
+controladores e observadores.
+
+6) Executar o programa Polos_plotter.sce para verificar os polos do
+controlador e do observador para cada método de controle.
+
+7) Executar os programas controlador_plotter.sce e observador_plotter.sce
+para comparar os efeitos de controle e erros de observação para os 
+tipos de controle.
+
+8) Executar o programa Separação_plotter.sce para realizar o método de
+separação no sistema e verificar a real trajetória do avião e sua 
+trajetória estimada. Alternar valores Kcal, Kclq e Koal, Kolq para 
+verificar as trajetórias estimadas para os ganhos obtidos de cada
+método.
+
+9) Executar o programa seguidor com disturbio.sce para simular o
+seguidor desenvolvido para o sistema. Modificar a matriz w0 para 
+aplicar distúrbios.
