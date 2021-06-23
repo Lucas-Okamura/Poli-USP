@@ -1,1 +1,0 @@
-robot_data['phi'] = robot_data['phi'].str.replace('Pi/8', str(np.pi/8)).astype(np.float64)
